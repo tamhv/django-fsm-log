@@ -20,4 +20,9 @@ class Migration(migrations.Migration):
             name='state',
             field=models.CharField(db_index=True, max_length=255, verbose_name='Target state'),
         ),
+        migrations.AlterField(
+            model_name='statelog',
+            name='object_id',
+            field=models.BigIntegerField(db_index=True),
+        ),
     ]
